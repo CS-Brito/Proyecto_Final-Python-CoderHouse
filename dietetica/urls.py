@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from dietetica.views import pruebaTemplate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('template1/', pruebaTemplate),
 ]
